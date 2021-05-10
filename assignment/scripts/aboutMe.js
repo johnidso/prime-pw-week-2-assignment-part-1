@@ -1,6 +1,6 @@
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
-let firstName = 'John';
+let firstName = 'John ';
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
 let lastName = 'Idso';
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
@@ -19,7 +19,7 @@ let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 let food = 'curry';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-let pets = 4;
+let pets = 2;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 4;
 // 11 - Add two pets to your `pets` variable
@@ -67,21 +67,42 @@ if (pets < allowedPets) {
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
 
-var mostPets = null
 
 if (pets > friendsPets) {
-  var mostPets = pets;
+  let mostPets = pets;
   console.log('I have the most pets!');
-}
+  console.log(mostPets);
+  }
   else if (friendsPets > pets) {
-    var mostPets = friendsPets
+    let mostPets = friendsPets;
     console.log('My friend has the most pets!');
+    console.log(mostPets);
   }
   else {
     console.log('We have the same amount of pets!');
   }
-console.log(mostPets);
+
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
+switch (pets > friendsPets) {
+  case true: {
+    let mostPets = pets;
+    console.log(mostPets);
+    break;
+  }
+  case false: {
+    let mostPets = friendsPets;
+    console.log(mostPets);
+    break;
+  }
+  default:
+    console.log('Error');
+}
+// I tried to find a way to still report the equal case (We have the same amount
+// of pets) but had trouble figuring out a way with the switch statement.
+
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+
+let mostPets = (pets > friendsPets) ? pets : friendsPets;
+console.log(mostPets);
