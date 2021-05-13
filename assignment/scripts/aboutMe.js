@@ -23,7 +23,8 @@ let pets = 1;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 5;
 // 11 - Add two pets to your `pets` variable
-console.log(pets + 2);
+pets += 2;
+console.log(pets);
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 2;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
@@ -94,8 +95,6 @@ switch (pets > friendsPets) {
     break;
   }
 }
-// I tried to find a way to still report the equal case (We have the same amount
-// of pets) but had trouble figuring out a way with the switch statement.
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
