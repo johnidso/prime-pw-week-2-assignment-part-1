@@ -19,9 +19,9 @@ let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 let food = 'curry';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-let pets = 2;
+let pets = 1;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 2;
+let friendsPets = 5;
 // 11 - Add two pets to your `pets` variable
 console.log(pets + 2);
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
@@ -29,7 +29,7 @@ const allowedPets = 2;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
 
-if (adventurous = true) {
+if (adventurous == true) {
   console.log('Adventures are great!');
 } else {
     console.log('How about we stay home?');
@@ -74,7 +74,9 @@ if (pets > friendsPets) {
     console.log('My friend has the most pets!');
     console.log(mostPets);
   } else {
+    let mostPets = pets;
     console.log('We have the same amount of pets!');
+    console.log(mostPets);
   }
 
 
