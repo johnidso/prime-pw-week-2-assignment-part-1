@@ -21,9 +21,9 @@ let food = 'curry';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 let pets = 2;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 4;
+let friendsPets = 2;
 // 11 - Add two pets to your `pets` variable
-pets + 2;
+console.log(pets + 2);
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 2;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
@@ -86,13 +86,11 @@ switch (pets > friendsPets) {
     console.log(mostPets);
     break;
   }
-  case false: {
+  default: {
     let mostPets = friendsPets;
     console.log(mostPets);
     break;
   }
-  default:
-    console.log('Error');
 }
 // I tried to find a way to still report the equal case (We have the same amount
 // of pets) but had trouble figuring out a way with the switch statement.
