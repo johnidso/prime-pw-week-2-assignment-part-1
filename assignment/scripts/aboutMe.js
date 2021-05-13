@@ -31,8 +31,7 @@ const allowedPets = 2;
 
 if (adventurous = true) {
   console.log('Adventures are great!');
-}
-  else {
+} else {
     console.log('How about we stay home?');
   }
 
@@ -51,11 +50,9 @@ if (luckyNumber == 2 && adventurous == true) {
 
 if (pets < allowedPets) {
   console.log('I can have more pets!');
-}
-  else if (pets == allowedPets) {
+  } else if (pets == allowedPets) {
     console.log('I have enough pets');
-  }
-  else {
+  } else {
     console.log('Oh no, I have too many pets!');
   }
 
@@ -72,13 +69,11 @@ if (pets > friendsPets) {
   let mostPets = pets;
   console.log('I have the most pets!');
   console.log(mostPets);
-  }
-  else if (friendsPets > pets) {
+  } else if (friendsPets > pets) {
     let mostPets = friendsPets;
     console.log('My friend has the most pets!');
     console.log(mostPets);
-  }
-  else {
+  } else {
     console.log('We have the same amount of pets!');
   }
 
